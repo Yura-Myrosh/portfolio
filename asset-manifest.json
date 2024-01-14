@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.031263a2.css",
+    "main.js": "/portfolio/static/js/main.1b272182.js",
+    "static/media/Bose.png": "/portfolio/static/media/Bose.356f03173b3dd86a8291.png",
+    "static/media/WeatherTrack.png": "/portfolio/static/media/WeatherTrack.9540faacbc7e638d15d6.png",
+    "static/media/Portfolio.png": "/portfolio/static/media/Portfolio.f43a30b37c9832717365.png",
+    "static/media/bose-qr.svg": "/portfolio/static/media/bose-qr.244b2cd0ae5303c98386999b6967c44a.svg",
+    "static/media/weather-qr.svg": "/portfolio/static/media/weather-qr.a759fac8a961fb419d83665af0933b6b.svg",
+    "static/media/live.svg": "/portfolio/static/media/live.91a1625bb24cbe26b8fac76b1acd55d9.svg",
+    "static/media/react.svg": "/portfolio/static/media/react.19df4041a7c4767ba9dfb2ef654fe858.svg",
+    "static/media/node.svg": "/portfolio/static/media/node.0b3b0b7e1140ae4abc1ba6204ed57075.svg",
+    "static/media/firebase.svg": "/portfolio/static/media/firebase.8f69a13150a1594d8fb73df74f12b548.svg",
+    "static/media/github.svg": "/portfolio/static/media/github.260c8a44e16da59c482fb282f4fef569.svg",
+    "static/media/ts.svg": "/portfolio/static/media/ts.32fb130a1a03eac5cd3d509d5b96f188.svg",
+    "static/media/logo_nav.svg": "/portfolio/static/media/logo_nav.359ace3ffb906197bc9fb718a195cbb3.svg",
+    "static/media/eye.svg": "/portfolio/static/media/eye.8b18c7f9358e57d5c4a124abb36d8e3a.svg",
+    "static/media/resume.svg": "/portfolio/static/media/resume.499e4dbd46ab913a77a21d6be46fa07c.svg",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.c964350a37b9f2500148e99035c79310.svg",
+    "static/media/gmail.svg": "/portfolio/static/media/gmail.dd4be970935c8e0a38ccd1b64a137b20.svg",
+    "static/media/html.svg": "/portfolio/static/media/html.bc5bda96b731ba58bd476974a76ced62.svg",
+    "static/media/js.svg": "/portfolio/static/media/js.012fac2115bab568edc27f1037766469.svg",
+    "static/media/mui.svg": "/portfolio/static/media/mui.ce9af75156149a3ae5ada85ab134adb5.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/tailwind.svg": "/portfolio/static/media/tailwind.973c73e85d4daa24b257ba20298716c4.svg",
+    "main.031263a2.css.map": "/portfolio/static/css/main.031263a2.css.map",
+    "main.1b272182.js.map": "/portfolio/static/js/main.1b272182.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.031263a2.css",
+    "static/js/main.1b272182.js"
+  ]
+}
