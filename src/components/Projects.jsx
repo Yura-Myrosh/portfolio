@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import { data } from "../data/data.jsx";
 import eye from "../assets/eye.svg";
 import github from "../assets/github.svg";
@@ -9,20 +9,20 @@ const Projects = () => {
 
   const projects = data;
 
-  const openModal = (project) => {
+  const openModal = useCallback((project) => {
     setCurrentProject(project);
     setModalOpen(true);
-  };
+  }, []);
 
-  const closeModal = () => {
+  const closeModal = useCallback(() => {
     setCurrentProject(null);
     setModalOpen(false);
-  };
+  }, []);
 
   return (
     <div
       name="projects"
-      className="w-full sm:h-screen bg-[#11161f] text-gray-300"
+      className="w-full min-h-screen bg-[#11161f] text-gray-300"
     >
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="sm:text-center pb-8 pl-4 bg-[#11161f] flex justify-center">
@@ -38,7 +38,7 @@ const Projects = () => {
             >
               <div className="relative">
                 <img
-                  className="w-full object-contain cursor-pointer"
+                  className="w-full h-auto object-contain cursor-pointer"
                   src={project.image}
                   alt={project.title}
                   onClick={() => openModal(project)}
@@ -53,7 +53,7 @@ const Projects = () => {
                     <img
                       src={eye}
                       alt="Live"
-                      className="w-16 p-2 zoom"
+                      className="w-16 h-16 p-2 zoom"
                       loading="lazy"
                     />
                   </a>
@@ -65,7 +65,7 @@ const Projects = () => {
                     <img
                       src={github}
                       alt="Live"
-                      className="w-16 p-2 zoom"
+                      className="w-16 h-16 p-2 zoom"
                       loading="lazy"
                     />
                   </a>
@@ -73,7 +73,7 @@ const Projects = () => {
                     <img
                       src={project.qrCode}
                       alt={`${project.title} QR`}
-                      className="w-14 p-2 cursor-pointer zoom"
+                      className="w-14 h-14 p-2 cursor-pointer zoom"
                       onClick={() => openModal(project)}
                       loading="lazy"
                     />
@@ -85,8 +85,7 @@ const Projects = () => {
                   {project.title}
                 </h1>
                 <p className="mt-2 text-gray-300">{project.description}</p>
-                <p className="mt-2 text-gray-300">{project.credentials}
-                </p>
+                <p className="mt-2 text-gray-300">{project.credentials}</p>
                 <p className="font-semibold pt-2 tracking-widest">
                   {project.techStack}
                 </p>
@@ -102,7 +101,7 @@ const Projects = () => {
             <img
               src={currentProject.qrCode}
               alt={`${currentProject.title} QR`}
-              className="w-44 mx-auto"
+              className="w-44 h-44 mx-auto"
             />
             <div className="flex justify-center mt-4">
               <button
