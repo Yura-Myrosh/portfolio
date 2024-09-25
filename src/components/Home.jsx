@@ -8,9 +8,9 @@ const Home = () => {
         <div className="hero-container">
           <h2
             className="hero glitch layers"
-            data-text="Frontend React Developer"
+            data-text="Front-End React Developer"
           >
-            <span>Frontend React Developer</span>
+            <span>Front-End React Developer</span>
           </h2>
         </div>
       </div>

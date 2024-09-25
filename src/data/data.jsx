@@ -1,9 +1,12 @@
 import weatherqr from "../assets/weather-qr.svg";
-import boseqr from "../assets/bose-qr.svg";
 import portfolioqr from "../assets/portfolio-qr.svg";
-import BoseImage from "../assets/Bose.png";
 import WeatherImage from "../assets/WeatherTrack.png";
 import PortfolioImage from "../assets/Portfolio.png";
+import ExchangeRateImage from "../assets/MagicExchange.png";
+import bookingqr from "../assets/booking-qr.svg";
+import exchangeqr from "../assets/exchangerate-qr.svg";
+import Booking from "../assets/Booking.png";
+import bluredbg from "../assets/blurred-bg.webp";
 
 export const data = [
   {
@@ -11,29 +14,47 @@ export const data = [
     title: "WeatherTrack",
     description:
       "Weather website that enables users to pull weather data from their location or any city by gathering real-time data via an API.",
-    techStack: "// React, JS, SCSS, API",
-    codeLink: "https://github.com/WinehouseD/weather-website",
+    techStack: "// React, JS, SCSS, DayJs, Axios, Jest, Netlify",
     liveLink: "https://weathertrack-forecast.netlify.app/",
+    codeLink: "https://github.com/WinehouseD/weather-website",
     qrCode: weatherqr,
   },
   {
-    image: BoseImage,
-    title: "Bose",
+    image: Booking,
+    title: "Booking",
     description:
-      "Professional and visually appealing landing-page website for an American manufacturing company.",
-    techStack: "// JS, Bootstrap, API",
-    codeLink: "https://github.com/WinehouseD/bose-website",
-    liveLink: "https://bose-comfort.netlify.com/",
-    qrCode: boseqr,
+      "Booking is a modern web application designed to streamline the reservation process.",
+    credentials: "Login: demo@gmail.com Password: demoPassword",
+    techStack: "// React, JS, Tailwind CSS, RadixUI, Zod, Jose, Redux, RTK, Vercel",
+    codeLink: "",
+    liveLink: "https://airbnb-type-project.vercel.app/",
+    qrCode: bookingqr,
+  },
+  {
+    image: ExchangeRateImage,
+    title: "Magic Exchange",
+    description:
+      "Exchange rate app converts currencies, displays chart with historical rates, and provides an updated list of the latest exchange rates.",
+    techStack: "// React, TS, MUI, Axios, ChartJS, Toastify, Jest, Vercel",
+    codeLink: "https://github.com/WinehouseD/exchange-rate-app",
+    liveLink: "https://exchange-rate-apps.vercel.app/",
+    qrCode: exchangeqr,
   },
   {
     image: PortfolioImage,
     title: "Portfolio",
     description:
-      "Crafted a sleek and responsive portfolio website to showcase my skills, achievements, and projects.",
-    techStack: "// JS, Tailwind CSS, Formik",
+      "Sleek and responsive portfolio website to showcase my skills, achievements, and projects.",
+    techStack: "// React, JS, Tailwind CSS, Formik/Yup, Jest, EmailJS, GitHub Pages",
     codeLink: "https://github.com/WinehouseD/portfolio",
     liveLink: "http://WinehouseD.github.io/portfolio",
     qrCode: portfolioqr,
+  },
+  {
+    image: bluredbg,
+    title: "Banking App",
+    description:
+      "Coming soon...",
+    techStack: "// NextJS, TS, Tailwind CSS, RadixUI, Zod, ChartJS",
   },
 ];
