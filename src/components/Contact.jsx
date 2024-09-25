@@ -98,7 +98,12 @@ const Contact = () => {
           Let's Collaborate
         </button>
       </form>
-      <ToastContainer />
+      <ToastContainer
+      autoClose={1000}
+      newestOnTop={false}
+      closeOnClick
+      pauseOnHover
+      draggable />
     </div>
   );
 };

@@ -1,43 +1,36 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./index.css";
-import ProgressBar from "./components/ProgressBar";
-import Loader from "./components/Loader";
+import ProgressBar from "./components/animations/progressBar/ProgressBar";
+import Loader from "./components/animations/loader/Loader";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
-import Animation from "./components/background/Animation";
+import BackgroundAnimation from "./components/animations/background/BackgroundAnimation";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
+import useLoader from "./hooks/useLoader";
 
 function App() {
-  const [showLoader, setShowLoader] = useState(false);
-
-  useEffect(() => {
-    if (performance.navigation.type === 1) {
-      setShowLoader(true);
-
-      const timeout = setTimeout(() => {
-        setShowLoader(false);
-      }, 6000);
-
-      return () => clearTimeout(timeout);
-    }
-  }, []);
+  const showLoader = useLoader();
 
   return (
     <div>
-      {showLoader && <Loader />}
-      <Animation />
-      <ProgressBar />
-      <Navbar />
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
+      {!showLoader && <Loader />}
+      {showLoader && (
+        <>
+          <BackgroundAnimation />
+          <ProgressBar />
+          <Navbar />
+          <Home />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
