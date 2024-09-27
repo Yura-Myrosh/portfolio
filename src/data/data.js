@@ -1,10 +1,10 @@
-import weatherqr from "../assets/weather-qr.svg";
-import portfolioqr from "../assets/portfolio-qr.svg";
+import weatherqr from "../assets/weather-qr.png";
+import portfolioqr from "../assets/portfolio-qr.png";
 import WeatherImage from "../assets/WeatherTrack.png";
 import PortfolioImage from "../assets/Portfolio.png";
 import ExchangeRateImage from "../assets/MagicExchange.png";
-import bookingqr from "../assets/booking-qr.svg";
-import exchangeqr from "../assets/exchangerate-qr.svg";
+import bookingqr from "../assets/booking-qr.png";
+import exchangeqr from "../assets/exchangerate-qr.png";
 import Booking from "../assets/Booking.png";
 import bluredbg from "../assets/blurred-bg.webp";
 
@@ -21,13 +21,13 @@ export const data = [
   },
   {
     image: Booking,
-    title: "Booking",
+    title: "Prestige Stay",
     description:
-      "Booking is a modern web application designed to streamline the reservation process.",
+      "Prestige Stay is a modern booking web application designed to streamline the reservation process.",
     credentials: "Login: demo@gmail.com Password: demoPassword",
     techStack: "// React, JS, Tailwind CSS, RadixUI, Zod, Jose, Redux, RTK, Vercel",
-    codeLink: "",
-    liveLink: "https://airbnb-type-project.vercel.app/",
+    codeLink: "https://github.com/WinehouseD/airbnb-type-proj",
+    liveLink: "https://prestige-stay.vercel.app/",
     qrCode: bookingqr,
   },
   {

@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from "react";
-import { data } from "../data/data.jsx";
+import { data } from "../data/data";
 import eye from "../assets/eye.svg";
 import github from "../assets/github.svg";
 
