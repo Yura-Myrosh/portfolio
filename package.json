@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "animejs": "^3.2.1",
     "autoprefixer": "^10.4.16",
+    "firebase": "^10.13.2",
     "formik": "^2.4.5",
     "framer-motion": "^10.16.5",
     "postcss": "^8.4.31",

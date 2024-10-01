@@ -1,13 +1,21 @@
-import React, { useState, useCallback } from "react";
-import { data } from "../data/data";
+import React, { useState, useCallback, useEffect } from "react";
 import eye from "../assets/eye.svg";
 import github from "../assets/github.svg";
+import fetchProjects from '../config/firebase.config'
 
 const Projects = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState(null);
+  const [projects, setProjects] = useState([]);
 
-  const projects = data;
+  useEffect(() => {
+    const getProjects = async () => {
+      const projects = await fetchProjects();
+      setProjects(projects);
+    };
+
+    getProjects();
+  }, []);
 
   const openModal = useCallback((project) => {
     setCurrentProject(project);

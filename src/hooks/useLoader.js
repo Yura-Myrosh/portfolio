@@ -6,7 +6,7 @@ function useLoader() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShowLoader(true);
-    }, 2000);
+    }, 2500);
 
     return () => clearTimeout(timeout);
   }, []);
