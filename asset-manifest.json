@@ -1,8 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.aae61c8f.css",
-    "main.js": "/portfolio/static/js/main.c6a21846.js",
-    "static/media/aws.svg": "/portfolio/static/media/aws.afc5ea1021d1cd5ddcdd9a8e024cb614.svg",
+    "main.js": "/portfolio/static/js/main.0f2c022f.js",
+    "static/media/Booking.png": "/portfolio/static/media/Booking.59b7c554b82e48030fef.png",
+    "static/media/WeatherTrack.png": "/portfolio/static/media/WeatherTrack.a20c5562916dd3f01f3a.png",
+    "static/media/portfolio-qr.png": "/portfolio/static/media/portfolio-qr.e6e21b5c11ff519bf008.png",
+    "static/media/exchangerate-qr.png": "/portfolio/static/media/exchangerate-qr.c0ecf76485c53db5a958.png",
+    "static/media/weather-qr.png": "/portfolio/static/media/weather-qr.0fce85519a450b7b3777.png",
+    "static/media/booking-qr.png": "/portfolio/static/media/booking-qr.14b178e5635734d7a459.png",
+    "static/media/Portfolio.png": "/portfolio/static/media/Portfolio.0c3969cfbaf987913559.png",
+    "static/media/MagicExchange.png": "/portfolio/static/media/MagicExchange.c3bf5b4df3efecee756c.png",
+    "static/media/blurred-bg.webp": "/portfolio/static/media/blurred-bg.e0fd6257685d731e2c31.webp",
+    "static/media/aws.svg": "/portfolio/static/media/aws.4e12aa57c60996cafa6807dcffb22649.svg",
     "index.html": "/portfolio/index.html",
     "static/media/react.svg": "/portfolio/static/media/react.03d232abdd426b32fb8e1ee9f48af3f6.svg",
     "static/media/react-native.svg": "/portfolio/static/media/react-native.147416d211127eb9b77e0056e3116568.svg",
@@ -18,10 +27,10 @@
     "static/media/mui.svg": "/portfolio/static/media/mui.ce9af75156149a3ae5ada85ab134adb5.svg",
     "static/media/tailwind.svg": "/portfolio/static/media/tailwind.03fdecbfd26561a058e76b84d95184a7.svg",
     "main.aae61c8f.css.map": "/portfolio/static/css/main.aae61c8f.css.map",
-    "main.c6a21846.js.map": "/portfolio/static/js/main.c6a21846.js.map"
+    "main.0f2c022f.js.map": "/portfolio/static/js/main.0f2c022f.js.map"
   },
   "entrypoints": [
     "static/css/main.aae61c8f.css",
-    "static/js/main.c6a21846.js"
+    "static/js/main.0f2c022f.js"
   ]
 }
