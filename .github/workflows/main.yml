@@ -1,0 +1,49 @@
+name: Firebase Deployment
+on:
+  push:
+    branches:
+      - master
+      - feature/secrets_fix
+
+env:
+  API_KEY: ${{ secrets.FIREBASE_API_KEY }}
+  APP_ID: ${{ secrets.FIREBASE_APP_ID }}
+  AUTH_DOMAIN: ${{ secrets.FIREBASE_AUTH_DOMAIN }}
+  MESSAGE_SENDER_ID: ${{ secrets.FIREBASE_MESSAGE_SENDER_ID }}
+  PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
+  STORAGE_BUCKET: ${{ secrets.FIREBASE_STORAGE_BUCKET }}
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2.3.2
+      - name: Install Dependencies
+        run: npm install
+      - name: Build
+        env:
+          CI: false
+        run: npm run build
+      - name: Archive Production Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+          path: build
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2.3.2
+      - name: Download Artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: build
+          path: build
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only hosting
