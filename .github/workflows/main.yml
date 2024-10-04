@@ -57,7 +57,15 @@ jobs:
         run: |
           echo '{ "projects": { "default": "${{ env.PROJECT_ID }}" } }' > .firebaserc
 
-      - name: Deploy to Firebase
-        run: firebase deploy --only hosting
+      - name: Set up Google Cloud credentials
+        run: |
+          echo "$GOOGLE_APPLICATION_CREDENTIALS" > $HOME/gcloud-service-key.json
+          export GOOGLE_APPLICATION_CREDENTIALS=$HOME/gcloud-service-key.json
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
+
+      - name: Install Firebase CLI
+        run: npm install -g firebase-tools
+
+      - name: Deploy to Firebase Hosting
+        run: firebase deploy --only hosting
